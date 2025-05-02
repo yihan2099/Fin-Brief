@@ -10,4 +10,14 @@ pytest
 python-dotenv
 ruff
 scikit-learn
+pyspark
+pyarrow
+fastparquet
+transformers[torch]
+mlflow
+shap
+torchmetrics
+optuna
+optuna-integration[mlflow]
+optuna-dashboard
 -e .

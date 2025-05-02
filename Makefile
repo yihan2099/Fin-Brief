@@ -4,7 +4,7 @@
 
 PROJECT_NAME = fin-brief
 PYTHON_VERSION = 3.10
-PYTHON_INTERPRETER = python
+PYTHON_INTERPRETER = python3.10
 
 #################################################################################
 # COMMANDS                                                                      #
@@ -64,9 +64,9 @@ sync_data_up:
 ## Set up Python interpreter environment
 .PHONY: create_environment
 create_environment:
-	@bash -c "if [ ! -z `which virtualenvwrapper.sh` ]; then source `which virtualenvwrapper.sh`; mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER); else mkvirtualenv.bat $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER); fi"
-	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
-	
+	@echo "Creating virtual environment in .venv..."
+	@$(PYTHON_INTERPRETER) -m venv .venv
+	@echo "Activate with: source .venv/bin/activate"
 
 
 
