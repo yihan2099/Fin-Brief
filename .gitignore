@@ -8,6 +8,7 @@
 .cache/
 notebooks/hub/
 notebooks/datasets
+notebooks/gemma3-agnews-lora
 
 # vim
 *.swp
