@@ -4,6 +4,11 @@
 # Mac OS-specific storage files
 .DS_Store
 
+# HF cache
+.cache/
+notebooks/hub/
+notebooks/datasets
+
 # vim
 *.swp
 *.swo
