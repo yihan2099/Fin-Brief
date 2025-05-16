@@ -21,7 +21,7 @@ requires-python = "~=3.10.0"
 [tool.ruff]
 line-length = 99
 src = ["fin_brief"]
-include = ["pyproject.toml", "fin_brief/**/*.py"]
+include = ["**/*.py"]
 
 [tool.ruff.lint]
 extend-select = ["I"]  # Add import sorting

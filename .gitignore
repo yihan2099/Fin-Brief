@@ -9,6 +9,8 @@
 notebooks/hub/
 notebooks/datasets
 notebooks/gemma3-agnews-lora
+notebooks/gemma3-agnews-lora-adapter
+notebooks/mlruns
 
 # vim
 *.swp
