@@ -4,7 +4,7 @@ Fine-tune Gemma-3-12B-IT on AG-News via 4-bit QLoRA.
 
 Launch:
 
-export CUDA_VISIBLE_DEVICES=1,2,3 
+export CUDA_VISIBLE_DEVICES=2,3 
     accelerate launch \
     --num_processes 2 \
     --multi_gpu \
@@ -114,7 +114,7 @@ sft_cfg = SFTConfig(
     lr_scheduler_type="cosine",
     logging_steps=25,
     save_strategy="epoch",
-    report_to="all", # in this case, it is using Mlflow
+    report_to="all",  # in this case, it is using Mlflow
     seed=RAND_SEED,
     gradient_checkpointing=True,
     ddp_find_unused_parameters=True,
